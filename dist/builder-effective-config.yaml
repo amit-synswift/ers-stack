@@ -1,0 +1,10 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+extraMetadata:
+  main: build/electron/main.js
+extends: react-cra
+electronVersion: 15.0.0

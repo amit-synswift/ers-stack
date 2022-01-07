@@ -1,0 +1,427 @@
+.container {
+    position: relative;
+}
+
+.page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+}
+.page-enter {
+    opacity: 0;
+}
+.page-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+.page-exit {
+    opacity: 1;
+}
+.page-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+/*.page-enter {*/
+/*    opacity: 0;*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+/*.page-enter-active {*/
+/*    opacity: 1;*/
+/*    transform: scale(1);*/
+/*    transition: opacity 300ms, transform 300ms;*/
+/*}*/
+
+/*.page-exit {*/
+/*    opacity: 1;*/
+/*    transform: scale(1);*/
+/*}*/
+
+/*.page-exit-active {*/
+/*    opacity: 0;*/
+/*    transform: scale(0.9);*/
+/*    transition: opacity 300ms, transform 300ms;*/
+/*}*/
+
+.slidesScreen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcomeScreen {
+    background-image: url("../static/image-2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeScreen:before {
+    content: "";
+    background-color: rgb(0 0 0 / 64%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.welcomeText h2 {
+    position: relative;
+    z-index: 9;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #505050;
+}
+
+.buttonGroup {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    margin-top: 40px;
+}
+
+
+.btn.big {
+    width: 240px;
+    height: 50px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.slideCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+    margin-bottom: 25px;
+}
+
+.slideOverlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 44%);
+    opacity: 0;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.slideOverlay h4 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.thumb {
+    float: left;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb:hover .slideOverlay {
+    opacity: 1;
+    transition: .4s;
+}
+
+.thumb img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.cardDetail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #dcdcdc;
+}
+
+.cardDetail span {
+    font-size: 16px;
+}
+
+.cardDetail p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none !important;
+}
+
+.header .back, .header .add {
+    display: flex;
+    align-items: center;
+    color: #000000 !important;
+}
+
+.header .back img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.header .add img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.select-image-box {
+    width: 100%;
+    padding: 20px;
+    height: 180px;
+    border: dashed 2px #c9c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #ededed
+}
+
+.select-image-box:hover {
+    border-color:#5e5e5e;
+}
+
+.select-image-box .imagetext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #818181;
+}
+
+.select-image-box .imagetext svg {
+    font-size: 100px;
+}
+
+.selectedImage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 180px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    border: solid 2px #ededed;
+}
+
+.remove-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #a30;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.back {
+    padding: 3px 10px;
+    background: #b7b7b7;
+    border-radius: 5px;
+}
+
+.btn {
+    border-radius:5px !important;
+}
+.imageMarker {
+    cursor: cell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88.5vh;
+}
+
+.imageMarker img {
+    width: 100%;
+    height: 100vh;
+}
+
+.marker-def {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #b2b5b9;
+}
+
+.marker-def:hover {
+    border: solid 2px #842029;
+    box-shadow: 0 0 3px #000;
+}
+
+.bottom-bar {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+}
+
+.selectFile {
+    width: 100%;
+    padding: 20px;
+    background: rgb(10 88 202 / 18%);
+    border: dashed 3px #b3c2d9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #536074;
+}
+.selectedFile {
+    width: 100%;
+    padding: 20px;
+    background: rgb(10 88 202 / 18%);
+    border: dashed 3px #b3c2d9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #536074;
+}
+
+.center-buttons ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.float-actions {
+    position: absolute;
+    display: flex;
+    left: 10px;
+    top: 10px;
+    justify-content: space-between;
+    border-radius: 5px;
+    z-index:9;
+}
+.float-actions button {
+    margin-right: 10px;
+    background:#fff !important;
+}
+.float-actions button:hover {
+    background:#000 !important;
+}
+.slidesScreen > div > div > div {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+
+.videoContainer {
+    position: fixed;
+    top: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: 9999;
+    height: 100vh;
+    width: 100%;
+}
+
+.videoContainer .top-bar {
+    position: absolute;
+    height: 40px;
+    top: 0;
+    z-index: 99999;
+    background: #00000052;
+    display: flex;
+    width: 100%;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.videoContainer .player-container {
+    position: static !important;
+}
+
+.videoContainer .top-bar .title {
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+.videoContainer .pdfcontainer {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.close-popup {
+    cursor: pointer;
+}
+
+.pdf-bottom-bar {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    align-items: center;
+    border-radius: 30px;
+    align-self: center;
+}
+
+.pdf-bottom-bar .buttons  {
+    background: rgb(0 0 0 / 67%);
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pdf-bottom-bar .buttons .button {
+    padding: 19px;
+}
+
+.buttons.is-centered {
+    justify-content: center;
+    display: flex;
+}
+.buttons.is-right {
+    justify-content: flex-start !important;
+    display: flex;
+}
