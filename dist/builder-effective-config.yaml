@@ -5,6 +5,6 @@ files:
   - filter:
       - build/**/*
 extraMetadata:
-  main: build/electron/main.js
+  main: build/electron.js
 extends: react-cra
-electronVersion: 15.0.0
+electronVersion: 15.3.5

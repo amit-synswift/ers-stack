@@ -6,9 +6,12 @@ const uploadsPath = Path.join(require('os').homedir(), 'Documents/PlantOverviewD
 const imagesPath = uploadsPath+'images';
 const filesPath = uploadsPath+"files";
 window.globalDir = dir;
+window.require = require;
 const database = new sqlite3.Database(dir + 'db.sqlite3', (err) => {
     if (err) console.error('Database opening error: ', err);
 });
+
+localStorage.clear();
 
 window.getFileSteam = (filePath) => {
     return fs.readFileSync(filePath,{encoding:'base64'});

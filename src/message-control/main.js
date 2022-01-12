@@ -8,6 +8,7 @@ const uploadsPath = Path.join(require('os').homedir(), 'Documents/PlantOverviewD
 const imagesPath = uploadsPath+'images';
 const filesPath = uploadsPath+"files";
 const { v4: uuidv4 } = require('uuid');
+const path = require("path");
 
 
 if(!fs.existsSync(dir)){
@@ -29,7 +30,7 @@ if(!fs.existsSync(filesPath)){
 let database = null;
 if(!fs.existsSync(dir+'db.sqlite3')){
     console.log('database file not found, creating one....');
-    fs.copyFileSync('./public/db.sqlite3',dir + 'db.sqlite3');
+    fs.copyFileSync(Path.join(__dirname, 'db.sqlite3'),dir + 'db.sqlite3');
     database = new sqlite3.Database(dir + 'db.sqlite3', (err) => {
         if (err) console.error('Database opening error: ', err);
     });

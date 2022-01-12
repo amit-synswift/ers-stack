@@ -265,21 +265,38 @@ a {
     height: 100vh;
 }
 
+.damn {
+    opacity: 1 !important;
+    background: rgb(255 255 255 / 63%) !important;
+}
+
 .marker-def {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgb(187 184 184 / 57%);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px #b2b5b9;
+    position: relative;
+    left: -50px;
+    top: -50px;
+    opacity: 0;
+    border-radius: 100%;
 }
 
 .marker-def:hover {
-    border: solid 2px #842029;
-    box-shadow: 0 0 3px #000;
+    opacity: 1;
+}
+
+.__react_component_tooltip{
+    margin-top: 85px !important;
+    width: 115px !important;
+    padding: 0 5px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: transparent !important;
 }
 
 .bottom-bar {
@@ -424,4 +441,11 @@ a {
 .buttons.is-right {
     justify-content: flex-start !important;
     display: flex;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

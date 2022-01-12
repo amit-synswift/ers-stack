@@ -1,6 +1,6 @@
-const electron = window.require('electron');
+const electron = require('electron');
 
-require('../src/message-control/main');
+require('./src/message-control/main');
 
 const { app } = electron;
 const { BrowserWindow } = electron;

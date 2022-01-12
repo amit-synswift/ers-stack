@@ -233,7 +233,7 @@ const CreateSlide = () => {
                     <ImageMarker
                         src={'file://'+selectedImage.path}
                         markers={markers}
-                        markerComponent={(props) => <div className={'marker-def'} data={{itemId:props.itemNumber}} onClick
+                        markerComponent={(props) => <div className={'marker-def damn'} data={{itemId:props.itemNumber}} onClick
                             ={(event) => handleContextMenu(event,props.itemNumber,props)}>
                             {decodeIcon(props)}
                         </div>}
