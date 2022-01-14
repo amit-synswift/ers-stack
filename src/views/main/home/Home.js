@@ -58,7 +58,7 @@ const Home = () => {
                 (<Login onClick={()=>onLoginClick()} value={value} setValue={setValue} error={error} />) :
                 (<>
                     <div className='welcomeText'>
-                        <h2>Welcome to SJVN</h2>
+                        <h2>Welcome to NATHPA JHAKRI HYDRO-POWER STATION</h2>
                     </div>
                     <div className='buttonGroup'>
                         <Link to="/slidesList" className="btn btn-primary big">Administator</Link>
