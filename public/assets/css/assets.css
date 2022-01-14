@@ -449,3 +449,9 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.logo-gorv{
+    position: relative;
+    z-index: 999;
+    width: 100px;
+}

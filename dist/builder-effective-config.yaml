@@ -6,5 +6,7 @@ files:
       - build/**/*
 extraMetadata:
   main: build/electron.js
+win:
+  icon: build/icon.ico
 extends: react-cra
 electronVersion: 15.3.5

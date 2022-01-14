@@ -51,11 +51,14 @@ const Home = () => {
 
     return (
         <div className='welcomeScreen'>
+            <div className='welcomeText'>
+                <img className="logo-gorv" src={"./icon.png"} />
+            </div>
             {!login ?
                 (<Login onClick={()=>onLoginClick()} value={value} setValue={setValue} error={error} />) :
                 (<>
                     <div className='welcomeText'>
-                        <h2>Welcome to Nangal Dam</h2>
+                        <h2>Welcome to SJVN</h2>
                     </div>
                     <div className='buttonGroup'>
                         <Link to="/slidesList" className="btn btn-primary big">Administator</Link>

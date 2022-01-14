@@ -1,5 +1,5 @@
 {
-  "name": "ers-stack",
+  "name": "sjvn",
   "version": "0.1.1",
   "private": true,
   "homepage": ".",
@@ -52,7 +52,7 @@
     "electron-dev": "react-scripts build && concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "static-build": "react-scripts build && concurrently \"BROWSER=none yarn start\" \" electron .\"",
     "rebuild-sqlite3": "electron-rebuild -f -w sqlite3",
-    "package": "electron-builder build --win -c.extraMetadata.main=build/electron.js --publish never"
+    "package": "electron-builder build --win -c.extraMetadata.main=build/electron.js -c.win.icon=build/icon.ico --publish never"
   },
   "main": "public/electron.js",
   "browserslist": {

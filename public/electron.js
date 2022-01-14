@@ -7,6 +7,7 @@ const { BrowserWindow } = electron;
 
 const path = require('path');
 const isDev = require('electron-is-dev');
+const iconPath = path.join(__dirname, "icon.png");
 
 let mainWindow;
 
@@ -14,6 +15,7 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 900,
         height: 680,
+        icon: iconPath,
         webPreferences: {
             nodeIntegration: true,
             enableRemoteModule: true,
