@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf494e77-7704-4672-bad8-4ef32518dcf2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/static/njhps.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/assets.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/assets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/home/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +40,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Synswift-Projects\NATHPA JHAKRI HYDRO-POWER STATION\build" />
+      <recent name="D:\Synswift-Projects\NATHPA JHAKRI HYDRO-POWER STATION\dist" />
       <recent name="D:\Synswift-Projects\ers-stack-master\build" />
       <recent name="D:\Synswift-Projects\ers-stack-master\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Synswift-Projects\NATHPA JHAKRI HYDRO-POWER STATION\build" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,6 +60,8 @@
       <workItem from="1642141994061" duration="1794000" />
       <workItem from="1642144637577" duration="3740000" />
       <workItem from="1642154813518" duration="1358000" />
+      <workItem from="1646645922074" duration="260000" />
+      <workItem from="1646713455703" duration="3876000" />
     </task>
     <servers />
   </component>
